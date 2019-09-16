@@ -1,0 +1,15 @@
+  <mat-form-field>
+    <input matInput placeholder="first name" required>
+  </mat-form-field>
+
+  <mat-form-field>
+        <input matInput placeholder="middle name" >
+  </mat-form-field>
+
+  <mat-form-field>
+  <mat-select placeholder="state">
+    <mat-option *ngFor="let state of states" [value]="state.value">
+      {{state.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

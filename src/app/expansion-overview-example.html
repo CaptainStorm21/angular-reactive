@@ -1,0 +1,18 @@
+<mat-horizontal-stepper linear #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="personalInfoGroup">
+          <app-accordion></app-accordion>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
+    <form [formGroup]="secondFormGroup">
+      
+    </form>
+  </mat-step>
+  <!--review step -->
+  <mat-step>
+   
+  </mat-step>
+</mat-horizontal-stepper>
+
+<button mat-flat-button color="primary">output to 3</button>

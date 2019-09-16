@@ -1,0 +1,29 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+        <app-personal-info></app-personal-info>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Employment
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+<app-employment></app-employment>
+  </mat-expansion-panel>
+<!-- residence -->
+ <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Residence
+      </mat-panel-title>
+        
+    </mat-expansion-panel-header>
+<app-residence></app-residence>
+  </mat-expansion-panel>
+</mat-accordion>
